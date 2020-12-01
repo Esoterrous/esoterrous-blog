@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-import { gql, useQuery } from "@apollo/client";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 
@@ -29,7 +28,7 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
             <img
-              src="/images/profile.jpg"
+              src="https://res.cloudinary.com/dkpj1mv2v/image/upload/v1606806934/profile_8115e17905.jpg"
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
             />
@@ -40,7 +39,7 @@ export default function Layout({ children, home }) {
             <Link href="/">
               <a>
                 <img
-                  src="/images/profile.jpg"
+                  src="https://res.cloudinary.com/dkpj1mv2v/image/upload/v1606806934/profile_8115e17905.jpg"
                   className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt={name}
                 />
