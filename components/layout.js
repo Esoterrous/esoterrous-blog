@@ -1,10 +1,11 @@
 import Head from "next/head";
+import Link from "next/link";
+import { gql, useQuery } from "@apollo/client";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
-import Link from "next/link";
 
 const name = "Andrew Roesener";
-export const siteTitle = "Esoterrous Technical Blog";
+export const siteTitle = "Esoterrous";
 
 export default function Layout({ children, home }) {
   return (
